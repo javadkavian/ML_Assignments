@@ -1,0 +1,181 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+
+\lstdefinestyle{mystyle}{
+    language=Python,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green},
+    breaklines=true,
+    showstringspaces=false,
+    frame=tb,
+    backgroundcolor=\color{gray!10},
+}
+
+\title{ML\_HW5}
+\author{Mohammad Javad Pesarakloo\\810100103}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Question 1}
+\subsection*{A}
+We denote mean of class one with $m_1$ and mean of class two with $m_2$.First we need to find $m_1$ and $m_2$:
+\begin{equation*}
+    m_1 = \begin{pmatrix}
+        3\\6
+    \end{pmatrix}, m_2 = \begin{pmatrix}
+        8.4\\7.6
+    \end{pmatrix}
+\end{equation*}
+Now we subtract means from their corresponding samples:
+\begin{equation*}
+    X_1 - m_1 = \lbrace \begin{pmatrix}
+        1\\-2.6
+    \end{pmatrix},\begin{pmatrix}
+        -1\\0.4
+    \end{pmatrix},\begin{pmatrix}
+        -1\\-0.6
+    \end{pmatrix},\begin{pmatrix}
+        0\\2.4
+    \end{pmatrix},\begin{pmatrix}
+        1\\0.4
+    \end{pmatrix} \rbrace
+\end{equation*}
+
+\begin{equation*}
+    X_2 - m_2 = \lbrace \begin{pmatrix}
+        0.6\\2.4
+    \end{pmatrix},\begin{pmatrix}
+        -2.4\\0.4
+    \end{pmatrix},\begin{pmatrix}
+        0.6\\-2.6
+    \end{pmatrix},\begin{pmatrix}
+        -0.4\\-0.6
+    \end{pmatrix},\begin{pmatrix}
+        1.6\\0.4
+    \end{pmatrix} \rbrace
+\end{equation*}
+
+Now we can calculate $S_1$ and $S_2$:
+\begin{equation*}
+    S_1^2 = \begin{pmatrix}
+        1 && -2.6\\-2.6 && 6.76
+    \end{pmatrix} + \begin{pmatrix}
+        1 && -0.4\\-0.4&&0.16
+    \end{pmatrix}+\begin{pmatrix}
+        1 && 0.6 \\ 0.6 && 0.36
+    \end{pmatrix} + \begin{pmatrix}
+        0 && 0 \\ 0 && 5.76
+    \end{pmatrix} + \begin{pmatrix}
+        1 && 0.4 \\ 0.4 && 0.16
+    \end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+    = \begin{pmatrix}
+        4 && -2 \\ -2 && 13.2
+    \end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+    S_2^2 = \begin{pmatrix}
+        0.36&&1.44\\1.44&&5.76
+    \end{pmatrix} + \begin{pmatrix}
+        5.76&&-0.96\\-0.96&&0.16
+    \end{pmatrix} + \begin{pmatrix}
+        0.36&&-1.56\\-1.56&&6.76
+    \end{pmatrix} + \begin{pmatrix}
+        0.16&&0.24\\0.24&&0.36
+    \end{pmatrix}+\begin{pmatrix}
+        2.56&&0.64\\0.64&&0.16
+    \end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+    = \begin{pmatrix}
+        9.2 && -0.2\\-0.2&&13.2
+    \end{pmatrix}
+\end{equation*}
+
+And now $S_w$ can be calculated:
+\begin{equation*}
+    S_w = \begin{pmatrix}
+        4 && -2 \\ -2 && 13.2
+    \end{pmatrix} + \begin{pmatrix}
+        9.2 && -0.2\\-0.2&&13.2
+    \end{pmatrix} = \begin{pmatrix}
+        13.2 && -2.2 \\ -2.2 && 26.4
+    \end{pmatrix}
+\end{equation*}
+
+\subsection*{B}
+\begin{equation*}
+    m_1 - m_2 = \begin{pmatrix}
+        3 && 3.6
+    \end{pmatrix} - \begin{pmatrix}
+        8.4 && 7.6
+    \end{pmatrix} = \begin{pmatrix}
+        -5.4 && -4
+    \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    S_B = \begin{pmatrix}
+        -5 && -4    
+    \end{pmatrix} \begin{pmatrix}
+        -5.4\\-4
+    \end{pmatrix} = \begin{pmatrix}
+        29.16 && 21.6\\
+        21.6 && 16
+    \end{pmatrix}
+\end{equation*}
+
+\subsection*{C}
+\begin{equation*}
+    A = S_w^{-1}S_B
+\end{equation*}
+
+\begin{equation*}
+    S_w^{-1} = \frac{1}{343.64} \begin{pmatrix}
+        26.4 && 2.2 \\ 2.2 && 13.2
+    \end{pmatrix} = \begin{pmatrix}
+        0.076 && 0.006 \\ 0.006 && 0.038
+    \end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+    \Rightarrow A = \begin{pmatrix}
+        2.34 && 1.73 \\ 0.99 && 0.73
+    \end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+    \Rightarrow A - \lambda I \begin{pmatrix}
+        2.34 - \lambda && 1.73 \\ 0.93 && 0.73 - \lambda
+    \end{pmatrix}
+\end{equation*}
+\begin{equation*}
+    |A - \lambda I| = (\lambda - 2.34)\times(\lambda - 0.73) = 0
+\end{equation*}
+
+\begin{equation*}
+    \Rightarrow \lambda^2 - 3.07\lambda - 0.004 = 0
+\end{equation*}
+\begin{equation*}
+    \lambda_1 = -0.001, \lambda_2 = 3.07
+\end{equation*}
+
+Thus the greatest eigen value is \textbf{3.07}.
+
+\section*{Question 2}
+TODO
+
+\end{document}
