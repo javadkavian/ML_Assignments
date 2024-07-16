@@ -176,6 +176,110 @@ And now $S_w$ can be calculated:
 Thus the greatest eigen value is \textbf{3.07}.
 
 \section*{Question 2}
-TODO
+\subsection*{A}
+Model selection is the process of selecting among many candidate models for a modeling problem while model assessment is the process of estimating the model's
+ prediction error (generalization error) over an independent new data sample.The reason for which we use model selection is that
+ each model have multiple hyper parameters that can affect the performance of the model;in this process we find the best hyper parameters 
+ to get the best modeling result.Also this process can be accross different types of machine learning models such as SVM, Logistic Regression, etc.
+
+
+ \subsection*{B}
+In process of model selection, we need sufficient data while in most cases, we don't have this amount of data.
+Instead, there are two main classes of techniques to approximate the ideal case of model selection:
+\begin{enumerate}
+    \item \textbf{Probabilistic Measures} :  Choose a model via in-sample error and complexity.There are four major probabilistic measures:
+    \begin{itemize}
+        \item Akaike Information Criterion (AIC)
+        \item Bayesian Information Criterion (BIC)
+        \item Minimum Description Length (MDL)
+        \item Structural Risk Minimization (SRM)
+    \end{itemize}
+    \item \textbf{Resampling Methods} : Choose a model via estimated out-of-sample error.In this mothod, we seek to estimate the performance of the model
+    by splitting the training dataset into sub train and test sets.This process may be repeated multiple times and the mean performance accross each trail
+    is reported.There exists three common resampling methods:
+    \begin{itemize}
+        \item Random train-test splits.
+        \item Cross-Validation (k-fold, LOOCV, etc.)
+        \item Bootstrap
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{C}
+When number of data samples is not sufficient, it is known that training error is optimistically biased and therefore is not a good 
+basis for choosing a model.The performance can be penalized based on how optimistic the training error is believed to be. This is typically achieved using algorithm-specific methods, often linear, that penalize the score based on the complexity of the model explained in the previous subsections.
+
+
+\section*{Question 3}
+
+\begin{equation*}
+    \theta = \lbrace \lambda_1, \lambda_2, \alpha \rbrace
+\end{equation*}
+First we define hidden variable z such that:
+\[
+z_i =
+\begin{cases}
+0 & x_i comes from the first component \\
+1  & otherwise
+\end{cases}
+\]
+\begin{equation*}
+    p(x_i, z_i | \theta) = (\alpha \lambda_1 e^{-\lambda_1 x_i})^{1-z_i} ((1-\alpha) \lambda_2 e^{- \lambda_2 x_i})^{z_i}
+\end{equation*}
+\begin{equation*}
+    \xrightarrow{\log} \log{p(x_i, z_i|\theta)} = (1-z_i)(\log{\alpha} + \log{\lambda_1} - \lambda_1 x_i) + z_i(\log{(1-\alpha)} + \log{\lambda_2} - \lambda_2 x_i)
+\end{equation*}
+
+\begin{equation*}
+    \log\_complete\_likelihood = \sum_{i=1}^{n} (1-z_i)(\log{\alpha} + \log{\lambda_1} - \lambda_1 x_i) + z_i(\log{(1-\alpha)} + \log{\lambda_2} - \lambda_2 x_i)
+\end{equation*}
+
+\begin{equation*}
+    Q(\theta, \theta^t) = E[log\_complete\_likelihood | \theta]
+\end{equation*}
+
+\begin{equation*}
+    = \sum_{i=1}^{n} (1 - E[z_i])(\log{\alpha} + \log{\lambda_1} - \lambda_1 x_i) 
+    + E[z_i](\log{(1-\alpha)} + \log{\lambda_2} - \lambda_2 x_i)
+\end{equation*}
+
+\begin{equation*}
+    \Rightarrow E[z_i] = p(z_i = 1 | x_i, \theta^t) = \frac{p(x_i|z_i=1, \theta^t)p(z_i=1|\theta^t)}{p(x_i|\theta^t)}
+\end{equation*}
+
+\begin{equation*}
+    = \frac{\lambda_2^t e^{-\lambda_2^t x_i} (1 - \alpha^t)}{\alpha^t\lambda_1^t e^{-\lambda_1^t x_i} + (1 - \alpha^t)\lambda_2^t e^{-\lambda_2^t x_i}}
+\end{equation*}
+
+\begin{equation*}
+    = \gamma_i^t
+\end{equation*}
+
+Now that we have the expected likelihood, we can find the updating rule for parameters:
+\begin{equation*}
+    \frac{\partial Q}{\partial \alpha} = \sum_{i=1}^{n} (1-\gamma_i^t)\frac{1}{\alpha} - \frac{\gamma_i^t}{1-\alpha} = 0
+\end{equation*}
+\begin{equation*}
+    \Rightarrow (1 - \alpha) \sum_{i=1}^{n}(1-\gamma_i^t) = \alpha \sum_{i=1}^{n} \gamma_i^t
+\end{equation*}
+\begin{equation*}
+    \Rightarrow \alpha = 1 - \frac{\sum_{i=1}^{n} \gamma_i^t}{n}
+\end{equation*}
+
+\begin{equation*}
+    \frac{\partial Q}{\partial \lambda_1} = \sum_{i=1}^{n}(1 - \gamma_i^t)(\frac{1}{\lambda_1} - x_i) = 0
+\end{equation*}
+
+\begin{equation*}
+    \Rightarrow \lambda_1 = \frac{n - \sum_{i=1}^{n} \gamma_i^t}{\sum_{i=1}^{n}(1-\gamma_i^t)x_i}
+\end{equation*}
+
+And with the same methodology, we have:
+\begin{equation*}
+    \lambda_2 = \frac{\sum_{i=1}^{n} \gamma_i^t}{\sum_{i=1}^{n} \gamma_i^t x_i}
+\end{equation*}
+
+
+\section*{Question 4}
+
 
 \end{document}
