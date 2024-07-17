@@ -365,4 +365,89 @@ which gives the following output:
 The above results make perfect sense because we expect the distance to be maximized when two classes do not have high resemblance like classes
 0 and 1.On the other hand, 4 and 9 look so much like each other which is why we see the shortest distance between these two.
 
+\section*{Question 7}
+Codes related to this question are stored in Q7.ipynb notebook file.First, lets explore some methods of finding the optimal number of clusters
+in a clustering problem:
+
+\begin{itemize}
+    \item k-means distortion and elbow analysis
+
+    K-means distortion is calculated as the sum of squared distances between each data point and its assigned cluster centroid.
+    The goal of K-means clustering is to minimize this distortion, as a lower distortion indicates better clustering performance.
+    Elbow analysis is a method used to determine the optimal number of clusters (k) in a K-means clustering algorithm.
+     The idea is to plot the distortion values for different values of k and look for an elbow point on the graph
+      where the rate of decrease in distortion starts to slow down significantly.
+     This point represents the optimal number of clusters to use for the dataset. 
+
+    \item Silhouette Score
+    
+    The silhouette score is a metric used to evaluate the quality of
+     clusters produced by a clustering algorithm, such as K-means.
+      It calculates the average similarity of each data point with its own
+     cluster compared to neighboring clusters.A score close to 1 indicates 
+     that the data point is well matched to its own cluster and poorly matched to neighboring clusters.
+     A score close to 0 indicates that the data point is on or very close to the decision boundary between two clusters.
+     A score close to -1 indicates that the data point is likely assigned to the wrong cluster.
+
+    \item Davies-Bouldin Index
+    
+    The Davies-Bouldin Index is calculated by considering
+     the average similarity between each cluster and its most similar cluster,
+      while also taking into account the average distance between the centroids of
+       the clusters.
+
+    \item Calinski-Harabasz Index
+    
+    The Calinski-Harabasz Index (also known as the Variance Ratio Criterion) is a metric which calculates a ratio that measures the separation between clusters and the compactness within clusters.
+    The Calinski-Harabasz Index is calculated as the ratio of the sum of between-cluster dispersion to the sum of within-cluster dispersion.
+
+    \item Dunn Index
+    
+    The Dunn Index measures the clustering quality based on the ratio of the minimum inter-cluster distance to the maximum intra-cluster distance.
+    The Dunn Index is calculated as the ratio of the minimum inter-cluster distance
+     (the distance between the nearest points of different clusters)
+      to the maximum intra-cluster distance (the distance between the farthest points within the same cluster).
+\end{itemize}
+
+Now lets use the explained methods to find the optimal number of clusters:
+
+\subsection*{Elbow}
+
+\includegraphics*[width = \textwidth]{8.png}
+
+\subsection*{Silhouette Score}
+
+\includegraphics*[width = \textwidth]{9.png}
+
+\subsection*{Davies-Bouldin Index}
+
+\includegraphics*[width = \textwidth]{10.png}
+
+\subsection*{Calinski-Harabasz Index}
+
+\includegraphics*[width = \textwidth]{11.png}
+
+
+\subsection*{Dunn Index}
+
+\includegraphics*[width = \textwidth]{12.png}
+
+As we see in all of the above figures, the optimal number of clusters is k=5.Now we can fit the optimal model to the data.
+But our data vector has 4 dimensions and can not be visualized on a 2D grid.There exists differnet methods for reducing the number of 
+dimensions to make them visualizable.Here we explore PCA nd TNSE:
+
+\subsection*{PCA}
+As we know, PCA makes components which maximaizes the variance.Fitting a PCA model with 2 components to the data and plotting the clusters,
+ we get the following figure:
+
+ \includegraphics*[width = \textwidth]{13.png}
+
+\subsection*{TNSE}
+T-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction technique used for visualizing high-dimensional data in a lower-dimensional space.
+t-SNE aims to preserve the local structure of the data by mapping similar data points in the high-dimensional space to nearby points in the low-dimensional space.
+Fitting a TNSE model with 2 components and plotting the clusters on a 2D grid, we get the following figure:
+
+\includegraphics*[width = \textwidth]{14.png}
+
+
 \end{document}
