@@ -281,6 +281,27 @@ And with the same methodology, we have:
 
 \section*{Question 4}
 
+\subsection*{A}
+The output layer contains three parts, each of them responsible for one set of GMM parameters:mean, convariance and weights.
+
+\subsection*{B}
+The activation function should be selected according to some features that each parameter have:
+
+\begin{enumerate}
+    \item Means : Linear(no constraint exists)
+    \item Covariances : ReLU, Exponential or SoftPlus(to ensure positive values)
+    \item Weights : SoftMax(to ensure the weights sum up to 1 and are non-negative)
+\end{enumerate}
+
+\subsection*{C}
+The loss function for training this neural network should be based on the log-likelihood of the data under the estimated GMM:
+\begin{equation*}
+    \log{p(x)} = \log{\sum_{k=1}^{K} \pi_k \mathcal{N}(x|\mu_k, \Sigma_k)}
+\end{equation*}
+
+where $\pi_k$ are the mixture weights and $\mathcal{N}(x|\mu_k, \Sigma_k)$ is the probability density function of a Gaussian distribution with mean
+$\mu_k$ and covariance $\Sigma_k$.
+
 \section*{Question 5}
 Codes related to this question are stored in Q5.ipynb notebook file.As suggested in the description, selecting a random index 
 and visualizing its picture, we have:
