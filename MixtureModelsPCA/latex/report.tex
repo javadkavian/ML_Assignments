@@ -281,5 +281,88 @@ And with the same methodology, we have:
 
 \section*{Question 4}
 
+\section*{Question 5}
+Codes related to this question are stored in Q5.ipynb notebook file.As suggested in the description, selecting a random index 
+and visualizing its picture, we have:
+
+\includegraphics*[width=\textwidth]{1.png}
+
+Now in order to standardize the images to make them feedable to PCA models, we can use \textbf{StandardScalar}.The covariance matrix can also be
+calculated using the \textbf{np.cov} built-in function of numpy.In the next step, eigen values and their corresponding eigen vectors
+can also be calculated using the \textbf{np.linalg.eig} built-in function of numpy.Visualizing the eigen values, we get the following figure:
+
+\includegraphics*[width = \textwidth]{2.png}
+
+As we see in the above figure, most of the variance is held in the first 25 components;thus we can compress the pictures using these components.
+Then by reconstructing the picture and comparing it with the original one, we have the following figure:
+
+\includegraphics*[width = \textwidth]{3.png}
+
+\section*{Question 6}
+Codes related to this question are stored in Q6.ipynb notebook file.At first, we can load data and extract the samples related to 0 and 1.Then
+we can concatenate these two classes and apply a principal component analysis on them to be able to visualze them;we have the following figure:
+
+\includegraphics*[width = \textwidth]{4.png}
+
+Now we can fit a gaussian mixture model with 2 components which gives us the following figure:
+
+\includegraphics*[width = \textwidth]{5.png}
+
+As asked in the description, difference between mean of two components is : \textbf{1915.67}.
+
+Now inverse transforming the data to the original dimensions, we expect that means have high resemblance to components 0 and 1 which 
+we see in the following figure:
+
+\includegraphics*[width = \textwidth]{6.png}
+
+Now if we find the samples whose probability of belonging to each component have low differnce, we expect that points to be 
+similar to both classes.Doing this analysis, we get the following figure:
+
+\includegraphics*[width = \textwidth]{7.png}
+
+Now we are asked to analyze the differnce between means of components for all different pairs of classes.using the following code, we found the 
+highest and the shortest differnce possbile:
+
+\begin{lstlisting}[style=mystyle]
+    max_distance = 0
+    min_distance = float('inf')
+    max_pair = None
+    min_pair = None
+    
+    for class1, class2 in combinations(range(10), 2):
+        data_class1 = X[Y == class1]
+        data_class2 = X[Y == class2]
+        data = np.concatenate([data_class1, data_class2])
+        
+        pca = PCA(n_components=2)
+        pca_data = pca.fit_transform(data)
+        
+        gmm = GaussianMixture(n_components=2)
+        gmm.fit(pca_data)
+        
+        distance = np.linalg.norm(gmm.means_[0] - gmm.means_[1])
+        
+        if distance > max_distance:
+            max_distance = distance
+            max_pair = (class1, class2)
+        
+        if distance < min_distance:
+            min_distance = distance
+            min_pair = (class1, class2)
+    
+    print(f'Pair with highest distance: {max_pair}, Distance: {max_distance}')
+    print(f'Pair with shortest distance: {min_pair}, Distance: {min_distance}')
+    
+\end{lstlisting}
+
+which gives the following output:
+
+\begin{enumerate}
+    \item Pair with highest distance: (0, 1), Distance: 1915.66
+    \item Pair with shortest distance: (4, 9), Distance: 979.84
+\end{enumerate}
+
+The above results make perfect sense because we expect the distance to be maximized when two classes do not have high resemblance like classes
+0 and 1.On the other hand, 4 and 9 look so much like each other which is why we see the shortest distance between these two.
 
 \end{document}
