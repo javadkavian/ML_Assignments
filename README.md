@@ -1,1 +1,4 @@
-# Machine Learning Course Assignments
+# Machine Learning Course Assignments Spring 2024
+## 
+
+This repository contains a collection of assignments completed as part of the Machine Learning course offered at Graduate Level Machine Learning Course at University of Tehran. Each assignment aims to explore various aspects of machine learning, including algorithm implementation, data preprocessing, model evaluation, and real-world application scenarios. The assignments are designed to enhance practical understanding and application of core machine learning concepts, utilizing popular frameworks such as Python, Pytorch, and scikit-learn. Users can navigate through the individual folders for specific assignments to find code, reports which are written in Latex markdown language, and relevant datasets. This repository serves as a reflective overview of the learning journey and practical skills gained throughout the course.
