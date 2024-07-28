@@ -1,0 +1,580 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.5)  28 JUL 2024 10:36
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**u:/UT/6/ML/Assignments/MixtureModelsPCA/latex/report.tex
+(u:/UT/6/ML/Assignments/MixtureModelsPCA/latex/report.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30> (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count193
+\lst@gtempboxa=\box51
+\lst@token=\toks17
+\lst@length=\count194
+\lst@currlwidth=\dimen143
+\lst@column=\count195
+\lst@pos=\count196
+\lst@lostspace=\dimen144
+\lst@width=\dimen145
+\lst@newlines=\count197
+\lst@lineno=\count198
+\lst@maxwidth=\dimen146
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count199
+\lst@skipnumbers=\count266
+\lst@framebox=\box52
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2023/03/17 version 6.0.3 text color boxes
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box53
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))
+\pgf@x=\dimen149
+\pgf@y=\dimen150
+\pgf@xa=\dimen151
+\pgf@ya=\dimen152
+\pgf@xb=\dimen153
+\pgf@yb=\dimen154
+\pgf@xc=\dimen155
+\pgf@yc=\dimen156
+\pgf@xd=\dimen157
+\pgf@yd=\dimen158
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count267
+\c@pgf@countb=\count268
+\c@pgf@countc=\count269
+\c@pgf@countd=\count270
+\t@pgf@toka=\toks22
+\t@pgf@tokb=\toks23
+\t@pgf@tokc=\toks24
+\pgf@sys@id@count=\count271
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count272
+\pgfsyssoftpath@bigbuffer@items=\count273
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count274
+\pgfmath@box=\box54
+\pgfmath@toks=\toks25
+\pgfmath@stack@operand=\toks26
+\pgfmath@stack@operation=\toks27
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count275
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box55
+\pgf@hbox=\box56
+\pgf@layerbox@main=\box57
+\pgf@picture@serial@count=\count276
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen178
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen182
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count277
+\pgf@shadingcount=\count278
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box58
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box59
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read3
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks30
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count279
+)
+\tcb@titlebox=\box60
+\tcb@upperbox=\box61
+\tcb@lowerbox=\box62
+\tcb@phantombox=\box63
+\c@tcbbreakpart=\count280
+\c@tcblayer=\count281
+\c@tcolorbox@number=\count282
+\tcb@temp=\box64
+\tcb@temp=\box65
+\tcb@temp=\box66
+\tcb@temp=\box67
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count283
+\pgfplotmarksize=\dimen188
+)
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikz@lastmovetox=\dimen193
+\tikz@lastmovetoy=\dimen194
+\tikzleveldistance=\dimen195
+\tikzsiblingdistance=\dimen196
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count284
+\tikznumberofchildren=\count285
+\tikznumberofcurrentchild=\count286
+\tikz@fig@count=\count287
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count288
+\pgfmatrixcurrentcolumn=\count289
+\pgf@matrix@numberofcolumns=\count290
+)
+\tikz@expandcount=\count291
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen197
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen198
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count292
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count293
+\leftroot@=\count294
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count295
+\DOTSCASE@=\count296
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box72
+\strutbox@=\box73
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen199
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count297
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count298
+\dotsspace@=\muskip16
+\c@parentequation=\count299
+\dspbrk@lvl=\count300
+\tag@help=\toks34
+\row@=\count301
+\column@=\count302
+\maxfields@=\count303
+\andhelp@=\toks35
+\eqnshift@=\dimen256
+\alignsep@=\dimen257
+\tagshift@=\dimen258
+\tagwidth@=\dimen259
+\totwidth@=\dimen260
+\lineht@=\dimen261
+\@envbody=\toks36
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box74
+) (report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count305
+\scratchdimen=\dimen262
+\scratchbox=\box75
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen263
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks39
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count311
+
+Overfull \hbox (50.36194pt too wide) detected at line 81
+\OML/cmm/m/it/10 S[] \OT1/cmr/m/n/10 = [] + [] + [] + [] + []
+ []
+
+
+Overfull \hbox (93.13985pt too wide) detected at line 101
+\OML/cmm/m/it/10 S[] \OT1/cmr/m/n/10 = [] + [] + [] + [] + []
+ []
+
+[1
+
+{C:/Users/javadpsk/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+Overfull \hbox (34.26897pt too wide) detected at line 234
+[] []\OML/cmm/m/it/10 complete[]likelihood \OT1/cmr/m/n/10 = [](1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 )([] \OML/cmm/m/it/10  \OT1/cmr/m/n/10 + [] [] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U[]x[]\OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 ([] [] + [] [] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 ^^U[]x[]\OT1/cmr/m/n/10 )
+ []
+
+[3] [4]
+<1.png, id=31, 300.6432pt x 298.4751pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 309.
+(pdftex.def)             Requested size: 345.0pt x 342.52866pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 309--310
+[][] 
+ []
+
+[5]
+<2.png, id=37, 408.3255pt x 314.3745pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 315.
+(pdftex.def)             Requested size: 345.0pt x 265.62698pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 315--316
+[][] 
+ []
+
+[6 <./1.png>]
+<3.png, id=44, 392.4261pt x 210.3057pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 320.
+(pdftex.def)             Requested size: 345.0pt x 184.89629pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 320--321
+[][] 
+ []
+
+[7 <./2.png> <./3.png>]
+<4.png, id=54, 413.3844pt x 314.3745pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 326.
+(pdftex.def)             Requested size: 345.0pt x 262.36984pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 326--327
+[][] 
+ []
+
+<5.png, id=56, 427.8384pt x 328.8285pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 330.
+(pdftex.def)             Requested size: 345.0pt x 265.17552pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 330--331
+[][] 
+ []
+
+[8 <./4.png>]
+<6.png, id=63, 392.4261pt x 210.3057pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 337.
+(pdftex.def)             Requested size: 345.0pt x 184.89629pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 337--338
+[][] 
+ []
+
+<7.png, id=65, 300.6432pt x 298.4751pt>
+File: 7.png Graphic file (type png)
+<use 7.png>
+Package pdftex.def Info: 7.png  used on input line 342.
+(pdftex.def)             Requested size: 345.0pt x 342.52866pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 342--343
+[][] 
+ []
+
+[9 <./5.png> <./6.png>] (C:\Users\javadpsk\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+) [10 <./7.png>] [11]
+<8.png, id=83, 406.1574pt x 328.8285pt>
+File: 8.png Graphic file (type png)
+<use 8.png>
+Package pdftex.def Info: 8.png  used on input line 437.
+(pdftex.def)             Requested size: 345.0pt x 279.31488pt.
+ [12]
+<9.png, id=88, 511.6716pt x 395.3169pt>
+File: 9.png Graphic file (type png)
+<use 9.png>
+Package pdftex.def Info: 9.png  used on input line 441.
+(pdftex.def)             Requested size: 345.0pt x 266.54991pt.
+ [13 <./8.png>]
+<10.png, id=96, 499.3857pt x 395.3169pt>
+File: 10.png Graphic file (type png)
+<use 10.png>
+Package pdftex.def Info: 10.png  used on input line 445.
+(pdftex.def)             Requested size: 345.0pt x 273.10674pt.
+ [14 <./9.png>]
+<11.png, id=103, 502.2765pt x 395.3169pt>
+File: 11.png Graphic file (type png)
+<use 11.png>
+Package pdftex.def Info: 11.png  used on input line 449.
+(pdftex.def)             Requested size: 345.0pt x 271.54443pt.
+ [15 <./10.png>]
+<12.png, id=110, 511.6716pt x 395.3169pt>
+File: 12.png Graphic file (type png)
+<use 12.png>
+Package pdftex.def Info: 12.png  used on input line 454.
+(pdftex.def)             Requested size: 345.0pt x 266.54991pt.
+ [16 <./11.png>]
+<13.png, id=117, 625.8582pt x 506.6127pt>
+File: 13.png Graphic file (type png)
+<use 13.png>
+Package pdftex.def Info: 13.png  used on input line 464.
+(pdftex.def)             Requested size: 345.0pt x 279.27171pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 464--465
+[][] 
+ []
+
+[17 <./12.png>]
+Overfull \hbox (11.38957pt too wide) in paragraph at lines 467--470
+\OT1/cmr/m/n/10 duc-tion tech-nique used for vi-su-al-iz-ing high-dimensional data in a lower-dimensional
+ []
+
+<14.png, id=124, 625.8582pt x 506.6127pt>
+File: 14.png Graphic file (type png)
+<use 14.png>
+Package pdftex.def Info: 14.png  used on input line 471.
+(pdftex.def)             Requested size: 345.0pt x 279.27171pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 471--472
+[][] 
+ []
+
+[18 <./13.png>] [19 <./14.png>] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 17332 strings out of 476331
+ 353919 string characters out of 5786350
+ 1917660 words of memory out of 5000000
+ 37490 multiletter control sequences out of 15000+600000
+ 518471 words of font info for 54 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,11n,80p,482b,1861s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\javadpsk\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/javadpsk/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on report.pdf (19 pages, 570034 bytes).
+PDF statistics:
+ 199 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+
